@@ -1,0 +1,45 @@
+{
+  "name": "angular2-some-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "tsc && static-server -p 8080 -n index.html",
+    "build:aot": "ngc -p tsconfig-aot.json",
+    "build:rollup": "rollup -c rollup.js",
+    "build": "npm run build:aot && npm run build:rollup && gulp build"
+  },
+  "keywords": [],
+  "author": "Alex Slubsky",
+  "dependencies": {
+    "@angular/common": "2.4.8",
+    "@angular/compiler": "2.4.8",
+    "@angular/compiler-cli": "2.4.8",
+    "@angular/core": "2.4.8",
+    "@angular/forms": "2.4.8",
+    "@angular/http": "2.4.8",
+    "@angular/platform-browser": "2.4.8",
+    "@angular/platform-browser-dynamic": "2.4.8",
+    "@angular/platform-server": "2.4.8",
+    "angular2-text-mask": "^6.0.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "core-js": "^2.4.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-replace": "^0.5.4",
+    "rxjs": "^5.0.1",
+    "systemjs": "^0.19.41",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "6.0.48",
+    "rollup": "^0.37.0",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "static-server": "^2.0.3",
+    "typescript": "2.0.6",
+    "gulp": "^3.9.0",
+    "gulp-if": "2.0.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "3.1.0"
+  }
+}
